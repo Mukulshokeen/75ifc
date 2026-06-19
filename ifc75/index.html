@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>75th Indian Foundry Congress 2027</title>
+    
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #FAF9F6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== HEADER - FULL IMAGE ===== */
+        header {
+            background: #003366;
+            border-bottom: 5px solid #C5A55A;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .header-full-image {
+            width: 100%;
+            display: block;
+            line-height: 0;
+        }
+
+        .header-full-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* ===== NAVIGATION ===== */
+        nav {
+            background: #003366;
+            padding: 12px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background: #C5A55A;
+            color: #003366;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 60px 0;
+            background: #FAF9F6;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #003366;
+            margin-bottom: 40px;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: #FAF9F6;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin: 0;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: #C5A55A;
+            color: #003366;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .blinking-text {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: #003366;
+            margin: 20px 0;
+            text-shadow: 
+                0 0 10px rgba(0, 51, 102, 0.3),
+                0 0 20px rgba(0, 51, 102, 0.2),
+                0 0 30px rgba(197, 165, 90, 0.3),
+                3px 3px 0 rgba(0, 51, 102, 0.2),
+                6px 6px 0 rgba(0, 51, 102, 0.1);
+            animation: blink3d 1.5s ease-in-out infinite;
+            display: inline-block;
+            background: linear-gradient(135deg, #003366, #C5A55A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @keyframes blink3d {
+            0% {
+                text-shadow: 
+                    0 0 10px rgba(0, 51, 102, 0.3),
+                    0 0 20px rgba(0, 51, 102, 0.2),
+                    0 0 30px rgba(197, 165, 90, 0.3),
+                    3px 3px 0 rgba(0, 51, 102, 0.2),
+                    6px 6px 0 rgba(0, 51, 102, 0.1);
+                transform: scale(1);
+            }
+            50% {
+                text-shadow: 
+                    0 0 20px rgba(0, 51, 102, 0.6),
+                    0 0 40px rgba(0, 51, 102, 0.4),
+                    0 0 60px rgba(197, 165, 90, 0.6),
+                    4px 4px 0 rgba(0, 51, 102, 0.3),
+                    8px 8px 0 rgba(0, 51, 102, 0.15);
+                transform: scale(1.02);
+            }
+            100% {
+                text-shadow: 
+                    0 0 10px rgba(0, 51, 102, 0.3),
+                    0 0 20px rgba(0, 51, 102, 0.2),
+                    0 0 30px rgba(197, 165, 90, 0.3),
+                    3px 3px 0 rgba(0, 51, 102, 0.2),
+                    6px 6px 0 rgba(0, 51, 102, 0.1);
+                transform: scale(1);
+            }
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        /* ===== ABOUT ===== */
+        .about-section {
+            background: #FAF9F6;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 14px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #C5A55A;
+            color: #003366;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        /* ===== REGISTRATION ===== */
+        .registration-section {
+            background: #FAF9F6;
+        }
+
+        .registration-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            display: block;
+            margin: 0 auto;
+        }
+
+        .registration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .reg-card {
+            background: white;
+            border-radius: 8px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .reg-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .reg-card.featured {
+            border-color: #C5A55A;
+            background: linear-gradient(135deg, #fff, #fdf8f0);
+        }
+
+        .reg-card h3 {
+            font-size: 1.6rem;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .reg-card .price {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #003366;
+            margin: 15px 0;
+        }
+
+        .reg-card ul {
+            list-style: none;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .reg-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            color: #555;
+        }
+
+        .reg-card ul li::before {
+            content: "✓ ";
+            color: #C5A55A;
+            font-weight: 700;
+        }
+
+        .btn-reg {
+            background: #003366;
+            color: white;
+            border: none;
+            padding: 14px 45px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+
+        .btn-reg:hover {
+            background: #C5A55A;
+            color: #003366;
+            transform: scale(1.05);
+        }
+
+        /* ===== ACCOMMODATION ===== */
+        .accommodation-section {
+            background: #FAF9F6;
+        }
+
+        .accommodation-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            display: block;
+            margin: 0 auto 30px auto;
+        }
+
+        .accommodation-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accommodation-content p {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .coming-soon-box {
+            max-width: 500px;
+            margin: 30px auto 0;
+            text-align: center;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 2px dashed #ccc;
+        }
+
+        .coming-soon-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .coming-soon-box h3 {
+            font-size: 1.8rem;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .coming-soon-box p {
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        /* ===== VENUE ===== */
+        .venue-section {
+            background: #FAF9F6;
+        }
+
+        .venue-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: block;
+            margin: 0 auto;
+        }
+
+        .venue-content {
+            max-width: 800px;
+            margin: 20px auto 0;
+            text-align: center;
+        }
+
+        .venue-content p {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .venue-content ul {
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .venue-content ul li {
+            padding: 5px 0;
+            color: #333;
+        }
+
+        /* ===== CONTACT ===== */
+        .contact-section {
+            background: #FAF9F6;
+        }
+
+        .contact-table-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            overflow-x: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            padding: 20px;
+        }
+
+        .contact-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1rem;
+        }
+
+        .contact-table thead {
+            background: #003366;
+            color: white;
+        }
+
+        .contact-table th {
+            padding: 15px 20px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .contact-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            color: #333;
+        }
+
+        .contact-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .contact-table tr:hover {
+            background: #f5f5f5;
+        }
+
+        .contact-table .contact-name {
+            font-weight: 700;
+            color: #003366;
+        }
+
+        .contact-table .contact-phone {
+            color: #0d47a1;
+        }
+
+        .contact-table .contact-email a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-table .contact-email a:hover {
+            color: #C5A55A;
+            text-decoration: underline;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #003366;
+            color: white;
+            padding: 40px 0 0;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-section h4 {
+            color: #C5A55A;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .footer-section a {
+            color: #C5A55A;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 10px;
+            }
+
+            nav ul li a {
+                font-size: 0.85rem;
+                padding: 8px 12px;
+            }
+
+            .registration-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .contact-table-wrapper {
+                padding: 10px;
+            }
+
+            .contact-table th,
+            .contact-table td {
+                padding: 10px 12px;
+                font-size: 0.85rem;
+            }
+
+            .blinking-text {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-table th,
+            .contact-table td {
+                padding: 8px 10px;
+                font-size: 0.75rem;
+            }
+            
+            .blinking-text {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER - FULL IMAGE ONLY -->
+    <header>
+        <div class="header-full-image">
+            <img src="images/website-slider.png" alt="75th Indian Foundry Congress">
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About IIF</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#accommodation">Accommodation</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="blinking-text">Innovate for New Opportunities</div>
+            <div class="hero-badge">🚀 COMING SOON</div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About The Institute of Indian Foundrymen</h2>
+            <div class="about-content">
+                <p>The Institute of Indian Foundrymen (IIF) is the apex body representing the foundry industry in India. Established in 1950, IIF has been instrumental in the growth and development of the foundry sector.</p>
+                <p>The 75th Indian Foundry Congress marks a milestone platinum jubilee celebration, bringing together industry leaders, innovators, and experts from across the globe.</p>
+                <a href="https://indianfoundry.org" target="_blank" class="btn">Visit Official Website →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section id="registration" class="registration-section">
+        <div class="container">
+            <h2 class="section-title">Registration Slabs</h2>
+            
+            <img src="images/registration-slabs.png" alt="Registration Slabs" class="registration-image"
+                 onerror="this.style.display='none'; this.parentElement.querySelector('.registration-grid').style.display='grid';">
+            
+            <div class="registration-grid" style="display:none;">
+                <div class="reg-card">
+                    <h3>Early Bird</h3>
+                    <p class="price">₹15,000</p>
+                    <p>Valid till 31 Dec 2026</p>
+                    <ul>
+                        <li>Full conference access</li>
+                        <li>Gala Dinner entry</li>
+                        <li>Exhibition access</li>
+                    </ul>
+                    <button class="btn-reg" onclick="alert('📋 Registration coming soon! Stay tuned.')">Register Now</button>
+                </div>
+                <div class="reg-card featured">
+                    <h3>Standard</h3>
+                    <p class="price">₹20,000</p>
+                    <p>Valid till 31 Jan 2027</p>
+                    <ul>
+                        <li>Full conference access</li>
+                        <li>Gala Dinner entry</li>
+                        <li>Exhibition access</li>
+                        <li>B2B meeting slots</li>
+                    </ul>
+                    <button class="btn-reg" onclick="alert('📋 Registration coming soon! Stay tuned.')">Register Now</button>
+                </div>
+                <div class="reg-card">
+                    <h3>Student</h3>
+                    <p class="price">₹5,000</p>
+                    <p>Valid till 31 Jan 2027</p>
+                    <ul>
+                        <li>Conference access</li>
+                        <li>Exhibition access</li>
+                        <li>Student ID required</li>
+                    </ul>
+                    <button class="btn-reg" onclick="alert('📋 Registration coming soon! Stay tuned.')">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCOMMODATION -->
+    <section id="accommodation" class="accommodation-section">
+        <div class="container">
+            <h2 class="section-title">Accommodation</h2>
+            
+            <img src="images/accommodation.png" alt="Accommodation Details" class="accommodation-image"
+                 onerror="this.style.display='none';">
+            
+            <div class="accommodation-content">
+                <p>Comfortable and convenient accommodation options for all attendees.</p>
+                <p>Partner hotels with special rates for conference delegates.</p>
+                
+                <div class="coming-soon-box">
+                    <div class="coming-soon-icon">🏨</div>
+                    <h3>More Details Coming Soon</h3>
+                    <p>Accommodation booking and hotel details will be available shortly.</p>
+                    <p>Stay tuned for updates on partner hotels and special rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VENUE -->
+    <section id="venue" class="venue-section">
+        <div class="container">
+            <h2 class="section-title">About the Venue</h2>
+            
+            <img src="images/ieml.png" alt="India Expo Centre & Mart" class="venue-image"
+                 onerror="this.style.display='none';">
+            
+            <div class="venue-content">
+                <p><strong>India Expo Centre & Mart (IEML)</strong></p>
+                <p>India's 4th largest integrated exhibitions and conventions venue, featuring technology-driven, world-class facilities.</p>
+                <p>Located in Greater Noida, Delhi NCR, the venue has hosted prominent events like:</p>
+                <ul>
+                    <li>✓ Handicrafts and Gifts Fair</li>
+                    <li>✓ Auto Expo</li>
+                    <li>✓ World Forum of Accountants</li>
+                    <li>✓ World Environment Expo 2025</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>📍 Greater Noida, Delhi NCR, India</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">📞 IFC Secretariat</h2>
+            
+            <div class="contact-table-wrapper">
+                <table class="contact-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="contact-name">Mr. Sanjeev Kumar</td>
+                            <td class="contact-phone">+91 88006 99428</td>
+                            <td class="contact-email">
+                                <a href="mailto:director.fic@indianfoundry.org">director.fic@indianfoundry.org</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contact-name">Mr. Basant Kumar</td>
+                            <td class="contact-phone">+91 74280 22869</td>
+                            <td class="contact-email">
+                                <a href="mailto:fic@indianfoundry.org">fic@indianfoundry.org</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contact-name">Ms. Bhavna Singh Pundhir</td>
+                            <td class="contact-phone">+91 79829 53238</td>
+                            <td class="contact-email">
+                                <a href="mailto:northern.region@indianfoundry.org">northern.region@indianfoundry.org</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📞 IFC Secretariat</h4>
+                    <p><strong>Mr. Sanjeev Kumar</strong><br>
+                    +91 88006 99428<br>
+                    <a href="mailto:director.fic@indianfoundry.org">director.fic@indianfoundry.org</a></p>
+                    <p><strong>Mr. Basant Kumar</strong><br>
+                    +91 74280 22869<br>
+                    <a href="mailto:fic@indianfoundry.org">fic@indianfoundry.org</a></p>
+                    <p><strong>Ms. Bhavna Singh Pundhir</strong><br>
+                    +91 79829 53238<br>
+                    <a href="mailto:northern.region@indianfoundry.org">northern.region@indianfoundry.org</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>📍 Venue</h4>
+                    <p>India Expo Centre & Mart<br>
+                    Greater Noida, Delhi NCR, India</p>
+                    <p><strong>📅 08 | 09 | 10 February 2027</strong></p>
+                    <br>
+                    <p style="font-size:0.85rem; opacity:0.7;">
+                        <strong>Key Highlights:</strong><br>
+                        100+ Casting Buyers • 30000+ Visitors<br>
+                        450+ Exhibitors • 15000+ sqm Exhibition
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Institute of Indian Foundrymen - Northern Region. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        function showRegistrationAlert() {
+            alert('📋 Registration feature coming soon! Stay tuned for updates.');
+        }
+
+        console.log('✅ 75th IFC Website loaded successfully!');
+        console.log('🎨 Background color: #FAF9F6 (Off White / Warm Ivory)');
+        console.log('📸 Header now shows ONLY website-slider.png image');
+    </script>
+
+</body>
+</html>
